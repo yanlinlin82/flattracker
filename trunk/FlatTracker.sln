@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{46AE8518-2655-44A5-A45E-E6E70C3D71DB}"
+	ProjectSection(SolutionItems) = preProject
+		Documents\ReadMe.txt = Documents\ReadMe.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{A19BF861-8908-4277-A8BE-784B9D26011C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FlatTracker", "Source\FlatTracker\FlatTracker.vcproj", "{BB6C350B-1CA7-4B80-B5C5-3F7BF36F2A08}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB6C350B-1CA7-4B80-B5C5-3F7BF36F2A08}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BB6C350B-1CA7-4B80-B5C5-3F7BF36F2A08}.Debug|Win32.Build.0 = Debug|Win32
+		{BB6C350B-1CA7-4B80-B5C5-3F7BF36F2A08}.Release|Win32.ActiveCfg = Release|Win32
+		{BB6C350B-1CA7-4B80-B5C5-3F7BF36F2A08}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BB6C350B-1CA7-4B80-B5C5-3F7BF36F2A08} = {A19BF861-8908-4277-A8BE-784B9D26011C}
+	EndGlobalSection
+EndGlobal

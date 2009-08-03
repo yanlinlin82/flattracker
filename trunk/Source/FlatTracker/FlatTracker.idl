@@ -1,0 +1,22 @@
+// FlatTracker.idl
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(B082CCBC-5C78-49BD-B2C3-EB3ACC3F674F),
+	version(1.0),
+	helpstring("FlatTracker 1.0 Type Library")
+]
+library FlatTrackerLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(C3A86782-AC8D-4616-A44C-090DDD44C8C5),
+		helpstring("Provider Class")
+	]
+	coclass Provider
+	{
+		[default] interface IUnknown;
+	};
+};
