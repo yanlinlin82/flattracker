@@ -1,0 +1,33 @@
+HKCR
+{
+	FlatTracker.Provider.1 = s 'Flat Issue Tracker for TortoiseSVN'
+	{
+		CLSID = s '{C3A86782-AC8D-4616-A44C-090DDD44C8C5}'
+	}
+	FlatTracker.Provider = s 'Flat Issue Tracker for TortoiseSVN'
+	{
+		CLSID = s '{C3A86782-AC8D-4616-A44C-090DDD44C8C5}'
+		CurVer = s 'FlatTracker.Provider.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {C3A86782-AC8D-4616-A44C-090DDD44C8C5} = s 'Flat Issue Tracker for TortoiseSVN'
+		{
+			ProgID = s 'FlatTracker.Provider.1'
+			VersionIndependentProgID = s 'FlatTracker.Provider'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{B082CCBC-5C78-49BD-B2C3-EB3ACC3F674F}'
+			
+			'Implemented Categories'
+			{
+				'{3494FA92-B139-4730-9591-01135D5E7831}'
+				{
+				}
+			}
+		}
+	}
+}

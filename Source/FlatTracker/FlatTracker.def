@@ -1,0 +1,10 @@
+; FlatTracker.def
+
+LIBRARY      "FlatTracker.dll"
+
+EXPORTS
+	DllCanUnloadNow		PRIVATE
+	DllGetClassObject	PRIVATE
+	DllRegisterServer	PRIVATE
+	DllUnregisterServer	PRIVATE
+	DllInstall		PRIVATE

@@ -1,0 +1,218 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "Resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "TargetVer.h"
+#endif
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "Resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""TargetVer.h""\r\n"
+    "#endif\r\n"
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "1 TYPELIB ""FlatTracker.tlb""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,0,0,1
+ PRODUCTVERSION 0,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "FileDescription", "FlatTracker"
+            VALUE "FileVersion", "0.0.0.1"
+            VALUE "InternalName", "FlatTracker"
+            VALUE "OriginalFilename", "FlatTracker.dll"
+            VALUE "ProductVersion", "0.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_FLATTRACKER         REGISTRY                "FlatTracker.rgs"
+IDR_PROVIDER            REGISTRY                "Provider.rgs"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CHOOSE_ISSUES DIALOGEX 0, 0, 388, 266
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Choose Issue(s)"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Check the following issue(s) which you want to resolve or associate with this commit:",IDC_STATIC,7,9,276,8
+    CONTROL         "",IDC_ISSUE_LIST,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_TABSTOP,7,22,374,214,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Manage",IDC_MANAGE,7,245,40,14
+    LTEXT           "Filter:",IDC_STATIC,63,248,20,8
+    EDITTEXT        IDC_FILTER,86,245,85,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Cancel",IDCANCEL,299,245,36,14
+    DEFPUSHBUTTON   "OK",IDOK,345,245,36,14
+END
+
+IDD_ISSUE DIALOGEX 0, 0, 232, 178
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Issue"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Title:",IDC_STATIC,7,9,17,8
+    EDITTEXT        IDC_TITLE,38,7,187,14,ES_AUTOHSCROLL
+    LTEXT           "Status:",IDC_STATIC,7,27,24,8
+    CONTROL         "Active",IDC_STATUS_ACTIVE,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,38,27,36,10
+    CONTROL         "Resolved",IDC_STATUS_RESOLVED,"Button",BS_AUTORADIOBUTTON,78,27,45,10
+    CONTROL         "Closed",IDC_STATUS_CLOSED,"Button",BS_AUTORADIOBUTTON,130,27,37,10
+    LTEXT           "Owner:",IDC_STATIC,7,46,25,8
+    EDITTEXT        IDC_OWNER,38,44,137,14,ES_AUTOHSCROLL
+    LTEXT           "Labels:",IDC_STATIC,7,65,24,8
+    COMBOBOX        IDC_LABELS,38,63,137,92,CBS_SIMPLE | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add",IDC_ADD,180,63,45,14
+    PUSHBUTTON      "Delete",IDC_DELETE,180,81,45,14
+    DEFPUSHBUTTON   "OK",IDOK,38,157,35,14
+    PUSHBUTTON      "Cancel",IDCANCEL,82,157,35,14
+END
+
+IDD_MANAGE_ISSUES DIALOGEX 0, 0, 491, 334
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Manage Issues"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Reload",IDC_RELOAD,7,7,36,14
+    PUSHBUTTON      "Add",IDC_ADD,51,7,36,14
+    PUSHBUTTON      "Edit",IDC_EDIT,95,7,36,14,WS_DISABLED
+    PUSHBUTTON      "Delete",IDC_DELETE,139,7,36,14,WS_DISABLED
+    PUSHBUTTON      "Save",IDC_SAVE,185,7,36,14
+    LTEXT           "Filter:",-1,334,9,20,8
+    EDITTEXT        IDC_FILTER,359,7,125,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_ISSUE_LIST,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_TABSTOP,7,27,477,300,WS_EX_CLIENTEDGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CHOOSE_ISSUES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 381
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 259
+    END
+
+    IDD_ISSUE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 225
+        VERTGUIDE, 38
+        VERTGUIDE, 175
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_MANAGE_ISSUES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 484
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 327
+        HORZGUIDE, 27
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_PROJNAME            "FlatTracker"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+1 TYPELIB "FlatTracker.tlb"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
